@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body{
+                padding-top: 56px;
+            }
+            .hero{
+                background-color: beige;
+                padding: 60px 0;
+                text-align: center;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top bg-opacity-50">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.jpg" alt="YarZa Logo" style="width:50px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    <!--Hero Section-->
+        <section class="hero mt-4">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Hello,I'm Web Dev in training</h1>
+                <p class="lead">Aspiring Web Developer</p>
+            </div>
+        </section>
+    <!--About Me-->
+        <section class="py-5" id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                        I am 21 years old . 
+                        A med student from UM2
+                        Learn basic of programming
+                </p>
+                <img src="./images/yarza.webp" alt="Photo of Yar Za" style="width:100px" class="rounded-circle" >
+            </div>
+         </section>
+    <!--Skills-->
+         <section id="skills" class="py-5 bg-light">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="row">
+                    <div class="col-md-4">HTML</div>
+                    <div class="col-md-4">CSS</div>
+                    <div class="col-md-4">bootstrap</div>
+                </div>
+            </div>
+         </section>
+    <!--Projects-->
+         <section id="projects" class="py-5">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">A very responsive portfolio</p>
+                                <a href="#" class="btn btn-primary">View Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+    <!--Contact-->
+         <section id="contact" class="py-5 bg-light" >
+            <div class="container">
+                <h2>Contact ME</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label"> Message </label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                 
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+         </section>
+    <!--Footer-->
+         <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                &copy; 2025 Yar Za. All rights reserved.
+            </div>
+         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
